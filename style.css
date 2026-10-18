@@ -54,5 +54,15 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:.
 .hero.compact h1{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:.3em}
 .hero.compact p{margin:0;font-size:1.05rem}
 section.tight{padding:1.75rem 0 2.5rem}
-.embed{height:1700px} /* decreased from 2100 to 1700px since too long */
-@media(max-width:600px){.foot-right{text-align:left}.embed{height:2200px}} /*made that 2200 instead of 2500 for same reason */
+.embed{height:1700px}
+@media(max-width:600px){.foot-right{text-align:left}.embed{height:2000px}}
+
+/* v4: nav bar under the logo */
+header.site{border-bottom:0}
+header.site > .wrap{padding-top:.9rem;padding-bottom:.9rem}
+header.site nav{background:var(--mist);border-top:1px solid #dfe2f0;border-bottom:3px solid var(--gold);margin:0}
+header.site nav .wrap{display:flex;flex-wrap:wrap;gap:.25rem;padding-top:0;padding-bottom:0}
+header.site nav a{margin:0;padding:.8rem 1.3rem;font-weight:700;color:var(--ink);border-bottom:0}
+header.site nav a:hover{background:#dfe3f7}
+header.site nav a[aria-current]{background:var(--ink);color:#fff}
+@media(max-width:600px){header.site nav a{padding:.75rem 1rem}}
