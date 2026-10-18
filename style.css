@@ -66,3 +66,12 @@ header.site nav a{margin:0;padding:.8rem .9rem;font-weight:700;color:var(--ink);
 header.site nav a:hover{background:#dfe3f7}
 header.site nav a[aria-current]{background:var(--ink);color:#fff}
 @media(max-width:600px){header.site nav a{padding:.75rem .8rem}}
+
+/* v5: centered logo + tabs, justified body text, centered steps */
+header.site > .wrap .brand{display:block;width:fit-content;margin:0 auto}
+header.site nav .wrap{justify-content:center}
+.steps li{text-align:center}
+.steps li::before{margin:0 auto .6rem}
+@media(min-width:700px){
+  section .wrap > p, ul.offer li{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+}
