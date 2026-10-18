@@ -69,7 +69,7 @@ header.site nav a[aria-current]{background:var(--ink);color:#fff}
 
 /* v5: centered logo + tabs, justified body text, centered steps */
 header.site > .wrap .brand{display:block;width:fit-content;margin:0 auto}
-header.site nav .wrap{justify-content:center}
+header.site nav .wrap{justify-content:flex-start}
 .steps li{text-align:center}
 .steps li::before{margin:0 auto .6rem}
 @media(min-width:700px){
