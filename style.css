@@ -54,5 +54,5 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:.
 .hero.compact h1{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:.3em}
 .hero.compact p{margin:0;font-size:1.05rem}
 section.tight{padding:1.75rem 0 2.5rem}
-.embed{height:2100px}
-@media(max-width:600px){.foot-right{text-align:left}.embed{height:2500px}}
+.embed{height:1700px} /* decreased from 2100 to 1700px since too long */
+@media(max-width:600px){.foot-right{text-align:left}.embed{height:2200px}} /*made that 2200 instead of 2500 for same reason */
